@@ -38,8 +38,8 @@ public class App extends javax.swing.JFrame {
     private void generateListComp(String str){
         lstComp = new HashMap<>();
         
-        for (int i = 0; i < 5; i++) {
-            Computer comp = new Computer(str);
+        for (int i = 0; i < 9; i++) {
+            Computer comp = new Computer(""+i);
             lstComp.put(Integer.valueOf(i),comp);
         }
     }
@@ -108,7 +108,7 @@ public class App extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(mPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 371, Short.MAX_VALUE)
+                .addComponent(mPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 444, Short.MAX_VALUE)
                 .addGap(0, 0, 0)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
         );

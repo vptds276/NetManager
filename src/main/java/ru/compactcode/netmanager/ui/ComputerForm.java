@@ -21,7 +21,7 @@ public class ComputerForm extends javax.swing.JPanel {
     public ComputerForm(Computer comp) {
         this.comp = comp;
         initComponents();
-        jLabel1.setText(comp.getIp());
+        jLabel1.setText("Student: "+comp.getIp());
         if ( this.comp.getIp().equals("null")||(this.comp.getIp().isEmpty())){
             jPanel1.setBackground(Color.BLACK);
         }else{
